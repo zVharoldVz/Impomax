@@ -1,0 +1,995 @@
+{% extends "Menus/layout.html" %}
+{% load static %}
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">COMPRA DE USA, TE LO TRAEMOS A PERÚ</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Tus compras de USA a Perú, como si las trajeras tú mismo.</h2>
+          <div class="input-group mb-3 cotizar" data-aos="fade-up" data-aos-delay="800">
+            <input type="text" class="form-control" id="inputUrl" placeholder="Ingrese el URL del producto a cotizar" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn-get-started scrollto" type="button" id="button-addon2" onclick="Cotizarproducto()">Cotizar</button>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img  " data-aos="fade-left" data-aos-delay="200">
+          <div class="embed-responsive embed-responsive-16by9 video-responsive">
+            <iframe src="https://www.youtube.com/embed/LDWqn2vrwcA" title="IMPORTA DE USA A PERU - MASTERCLASS GRATUITA 2023  | IMPOMAXS COURIER" frameborder="0"  allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero -->
+
+  <main id="main">
+   
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
+      <div class="container">
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="row">
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/AMZN.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/EBAY.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/WMT.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/Newegg.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/BBY.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/BABA.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                </div>
+      
+              </div>
+
+            </div>
+            <div class="carousel-item">
+            
+              <div class="row">
+
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/ray-ban.svg' %}" class="img-fluid" alt="" data-aos="zoom-in">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/tommy-hilfiger.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/LEVI.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/MichaelKors.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/Zappos-01.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+                </div>
+      
+                <div class="col-lg-2 col-md-4 col-6">
+                  <img src="{% static 'Currierr/img/clients/Victoria_Secret.svg' %}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                </div>
+      
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Clients Section -->
+    <!-- ======= Services Section -->
+    <section id="ComoCompro" class="services">
+      <div class="container comocompro">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2 class="textpasos">PASO A PASO</h2>
+          <p>Compra en USA online en 04 simples pasos</p>
+        </div>
+
+        <div class="row justify-content-center align-items-center " data-aos="fade-up" data-aos-delay="150">
+          <div class="col-sm-6 col-lg-4 mb-2-9 mb-sm-0">
+              <div class="pr-md-3">
+                  <div class="text-center text-sm-right mb-2-9">
+                      <div class="mb-4">
+                          <img src="{% static 'Currierr/img/Pasos/undraw_empty_cart_co35.svg' %}" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Paso 1:</h4>
+                      <p class="display-30 mb-0 text-justify">Elige la página web favorita donde realizarás tus compras (Tenemos una lista con las mejores y más seguras) haciendo clic <a class="scrollto" href="#Listacompra">aqui</a>. Créate una cuenta, añade al carrito de compras el producto y la cantidad.</p>
+                      <br>
+                    </div><br><br>
+                  <div class="text-center text-sm-right">
+                      <div class="mb-4">
+                          <img src="{% static 'Currierr/img/Pasos/undraw_credit_card_payments_re_qboh.svg' %}" alt="..." class="rounded-circle"/>
+                      </div>
+                      <h4 class="sub-info">Paso 2:</h4>
+                      <p class="display-30 mb-0 text-justify" >Coloca nuestra dirección de Miami y realiza el pago con su tarjeta BCP o Interbank (De preferencia cuenta de ahorros en dólares).</p>
+                      <br>
+                    </div>
+              </div>
+          </div>
+          <div class="col-lg-4 d-lg-block text-center">
+              <div class="why-choose-center-image">
+                  <img src="{% static 'Currierr/img/Pasos/Direccion.svg' %}" alt="..." class="rounded-circle">
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="pl-md-3">
+                  <div class="text-center text-sm-left mb-2-9">
+                      <div class="mb-4">
+                          <img src="{% static 'Currierr/img/Pasos/undraw_certification_re_ifll.svg' %}" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Paso 3:</h4>
+                      <p class="display-30 mb-0 ">Envíanos los siguientes documentos:</p><br>
+                      <p class="display-30 mb-0 ">1. Factura (Documento PDF). </p>
+                      <p class="display-30 mb-0 ">2. Documento de Identidad – DNI (ambas caras).</p>
+                      <p class="display-30 mb-0">3. Número de tracking o seguimiento. </p><br>
+                      <p class="display-30 mb-0 ">A través de nuestro contacto de WhatsApp para gestionar su embarque clic <a class="scrollto" href="https://wa.link/q3116w">aqui</a>. </p>
+                      <br>
+                  </div>
+  
+                  <div class="text-center text-sm-left">
+                      <div class="mb-4">
+                          <img src="{% static 'Currierr/img/Pasos/undraw_social_networking_re_i1ex.svg' %}" alt="..." class="rounded-circle">
+                      </div>
+                      <h4 class="sub-info">Paso 4:</h4>
+                      <p class="display-30 mb-0">Te avisamos cuando tu producto se encuentre en nuestra oficina para que puedas cancelar y recoger tu producto.</p>
+                      <br>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+   <!-- End Services Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="Listacompra" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>¿DÓNDE COMPRAR DE USA? </h2>
+          <p>Lista de páginas webs recomendadas y más seguras por categoría.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col d-flexalign-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="ri-mac-line"></i></div>
+              <h4 class="title">Artículos tecnológicos</h4>
+              <div>
+                <a class="description" href="https://www.amazon.com/ " target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.gamestop.com/"target="_blank">Gamestop |</a> 
+                <a class="description" href="https://www.bestbuy.com/" target="_blank">Bestbuy |</a> 
+                <a class="description" href="https://www.walmart.com" target="_blank">Walmart |</a> 
+                <a class="description" href="https://www.newegg.com/" target="_blank">Newegg |</a> 
+                <a class="description" href="https://www.bhphotovideo.com/" target="_blank">Bhphotovideo |</a> 
+                <a class="description" href="https://www.ebay.com/" target="_blank">Ebay |</a> 
+                <a class="description" href="https://www.brandsmartusa.com/" target="_blank">Brand Smart Usa |</a> 
+                <a class="description" href="https://www.tigerdirect.com/" target="_blank">Tiger Direct |</a> 
+                <a class="description" href="https://swappa.com/"target="_blank">Swappa |</a> 
+                <a class="description" href="https://buy.gazelle.com/" target="_blank">Gazelle</a>                 
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"> 
+                <svg width="30px" height="40px" viewBox="-1 0 255 255" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" class="iconsvg" stroke-width="6.119999999999999">
+                <g id="sneakers"> 
+                  <path d="M36.939,41.904 C36.939,41.904 66.654,18.074 81.829,9.260 C96.655,0.650 105.854,-3.002 113.110,2.818 C120.365,8.637 115.064,30.091 127.792,42.819 C140.520,55.547 148.324,53.058 158.282,52.141 C169.451,51.112 183.418,50.946 191.035,58.563 C201.856,69.384 188.436,128.716 205.584,170.612 C216.349,196.916 249.398,232.292 249.398,232.292 C249.398,232.292 233.151,248.587 233.151,248.587 C233.151,248.587 151.126,200.503 151.126,200.503 C151.126,200.503 92.437,97.973 92.437,97.973 C92.437,97.973 36.939,41.904 36.939,41.904 Z" id="path-1" class="iconsvg" fill-rule="evenodd"/> 
+                  <path d="M32.893,37.000 C32.893,37.000 65.123,7.423 74.375,9.492 C83.628,11.560 88.951,30.615 92.437,41.404 C96.122,52.814 100.860,74.902 99.063,86.631 C98.033,93.351 93.144,97.266 93.144,97.266 C93.144,97.266 32.893,37.000 32.893,37.000 Z" id="path-2" class="iconsvg" fill-rule="evenodd"/> 
+                  <path d="M236.686,252.122 C227.048,261.761 166.451,245.527 139.813,218.888 C139.813,218.888 7.584,86.659 7.584,86.659 C-4.913,74.162 -0.879,43.514 11.826,38.576 C26.955,32.696 31.282,29.748 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C118.175,116.641 135.109,173.172 156.783,194.847 C176.227,214.290 215.214,235.056 228.201,239.394 C234.505,241.500 239.749,236.332 243.050,233.030 C244.745,231.335 247.985,228.066 251.123,231.204 C253.889,233.970 251.952,236.857 249.414,239.394 C244.919,243.890 238.511,250.298 236.686,252.122 Z" id="path-3" class="iconsvg" fill-rule="evenodd"/> 
+                  <path d="M92.437,102.216 C89.312,105.340 84.247,105.340 81.123,102.216 C81.123,102.216 14.881,36.974 14.881,36.974 C26.776,32.221 30.527,28.326 37.282,35.748 C37.282,35.748 69.526,67.992 93.851,92.316 C95.225,93.691 96.573,95.181 97.903,96.749 C97.903,96.749 92.437,102.216 92.437,102.216 Z" id="path-4" class="iconsvg" fill-rule="evenodd"/> 
+                </g> 
+                </svg>
+              </div>
+              <h4 class="title">Zapatillas Originales</h4>
+              <div>
+                <a class="description" href="https://www.6pm.com" target="_blank">6PM |</a> 
+                <a class="description" href="https://www.eastbay.com/" target="_blank">Eastbay |</a> 
+                <a class="description" href="https://www.finishline.com/" target="_blank">Finishline |</a> 
+                <a class="description" href="https://www.zumiez.com" target="_blank">Zumiez |</a> 
+                <a class="description" href="https://www.jimmyjazz.com/" target="_blank">Jimmyjazz |</a> 
+                <a class="description" href="https://www.zappos.com/" target="_blank">Zappos |</a> 
+                <a class="description" href="https://stockx.com/" target="_blank">Stockx |</a> 
+                <a class="description" href="https://www.dsw.com/" target="_blank">Dsw |</a>
+                <a class="description" href="https://www.adidas.com/us" target="_blank">Adidas |</a> 
+                <a class="description" href="https://www.kmart.com/" target="_blank">Kmart |</a> 
+                <a class="description" href="https://www.skechers.com/" target="_blank">Skechers |</a> 
+                <a class="description" href="https://www.shoes.com/" target="_blank">Shoes |</a> 
+                <a class="description" href="https://www.shoedazzle.com/" target="_blank">Shoedazzle |</a> 
+                <a class="description" href="https://www.crocs.com/" target="_blank">Crocs |</a> 
+                <a class="description" href="https://www.aldoshoes.com/us/" target="_blank">Aldo</a> 						                
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon">
+                <svg class="iconsvg" height="40px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                  <g id="SVGRepo_iconCarrier"> 
+                    <g><g><path d="M487.828,289.496c-12.858-17.271-30.156-28.682-50.827-33.724v-17.268h2.571c6.649,0,12.039-5.39,12.039-12.039 s-5.39-12.039-12.039-12.039h-14.61H301.565l20.145-183.375c0.373-3.401-0.718-6.801-3.001-9.349 c-2.284-2.549-5.544-4.004-8.965-4.004H12.038c-3.421,0-6.681,1.456-8.965,4.004c-2.284,2.549-3.374,5.947-3.001,9.349 l41.32,376.126c0.671,6.102,5.827,10.724,11.966,10.724h0.348l3.923,56.279c0.439,6.308,5.686,11.202,12.01,11.202h136.226 c12.643,5.887,26.975,8.919,42.673,8.919h162.817c32.159,0,58.603-12.688,76.473-36.689C503.641,436.374,512,407.307,512,373.555 C512,339.804,503.641,310.734,487.828,289.496z M412.924,238.502v14.314h0c-0.522-0.006-1.045-0.01-1.569-0.01H248.539 c-0.524,0-1.047,0.004-1.569,0.01v-14.314h41.161H412.924z M64.148,393.821L25.472,41.775H296.31l-18.967,172.651H258.82 l12.898-117.397c0.373-3.401-0.718-6.801-3.001-9.349c-2.284-2.549-5.544-4.004-8.965-4.004H62.032 c-3.421,0-6.681,1.456-8.965,4.004c-2.284,2.549-3.374,5.947-3.001,9.349l25.078,228.278c0.671,6.104,5.827,10.724,11.966,10.724 h64.645c-0.262,1.203-0.51,2.416-0.746,3.639c-0.119,0.619-0.236,1.24-0.348,1.864c-0.199,1.103-0.39,2.212-0.567,3.329 c-0.124,0.779-0.238,1.564-0.353,2.35c-0.147,1.016-0.291,2.032-0.42,3.06c-0.116,0.92-0.217,1.852-0.319,2.782 c-0.102,0.934-0.207,1.867-0.295,2.811c-0.1,1.067-0.178,2.146-0.259,3.226c-0.063,0.843-0.135,1.681-0.187,2.53 c-0.078,1.269-0.13,2.555-0.182,3.84c-0.028,0.687-0.069,1.368-0.09,2.06c-0.06,1.991-0.094,3.999-0.094,6.03 c0,1.919,0.034,3.823,0.089,5.72c0.02,0.736,0.057,1.461,0.087,2.191c0.046,1.122,0.094,2.242,0.159,3.354 c0.053,0.921,0.117,1.836,0.183,2.748c0.064,0.87,0.134,1.736,0.209,2.6c0.09,1.04,0.185,2.078,0.293,3.107 c0.019,0.182,0.033,0.367,0.052,0.548H64.148z M220.321,238.502h2.571v17.268c-15.59,3.803-29.256,11.236-40.551,22.066 c-5.942,5.688-11.202,12.296-15.716,19.767c-0.083,0.137-0.166,0.273-0.248,0.412c-0.768,1.283-1.514,2.592-2.238,3.926 c-0.141,0.26-0.279,0.522-0.418,0.784c-0.671,1.259-1.327,2.534-1.958,3.837c-0.177,0.364-0.344,0.737-0.518,1.103 c-0.445,0.946-0.881,1.905-1.307,2.874c-0.208,0.472-0.423,0.938-0.625,1.414H97.899l-9.282-84.492h48.723 c6.649,0,12.039-5.39,12.039-12.039s-5.39-12.037-12.039-12.037H85.971l-3.968-36.116h79.413c6.649,0,12.039-5.39,12.039-12.039 c0-6.649-5.39-12.039-12.039-12.039H79.358l-3.893-35.439h170.851l-11.718,106.673h-14.277c-6.649,0-12.039,5.39-12.039,12.039 S213.672,238.502,220.321,238.502z M80.868,461.303l-2.949-42.301h75.792c0.006,0.02,0.012,0.041,0.018,0.061 c0.554,1.994,1.14,3.963,1.772,5.895c0.02,0.063,0.039,0.129,0.059,0.191c0.61,1.859,1.253,3.692,1.935,5.491 c0.504,1.341,1.049,2.643,1.59,3.946c0.141,0.336,0.271,0.681,0.414,1.015c0.663,1.554,1.362,3.072,2.079,4.572 c0.019,0.039,0.036,0.078,0.055,0.118c3.722,7.761,8.136,14.8,13.253,21.011H80.868z M411.355,470.222H248.539 c-13.196,0-24.128-2.557-33.187-6.86c-0.403-0.271-0.82-0.529-1.262-0.754c-14.05-7.141-23.38-18.43-29.575-30.404 c-10.168-19.97-12.235-42.855-12.507-55.501c-0.019-1.047-0.035-2.096-0.035-3.153c0-1.335,0.026-2.65,0.055-3.963 c0.331-12.361,2.386-33.632,11.499-52.688c0.12-0.246,0.237-0.491,0.36-0.737c0.066-0.136,0.135-0.272,0.202-0.408 c0.497-0.984,1.024-1.965,1.569-2.945c0.429-0.764,0.858-1.526,1.306-2.268c0.053-0.089,0.105-0.178,0.158-0.267 c9.796-16.109,24.07-26.917,42.021-31.231c0.067-0.016,0.138-0.029,0.206-0.045c0.976-0.231,1.967-0.438,2.965-0.631 c0.713-0.136,1.441-0.255,2.171-0.373c0.384-0.063,0.766-0.128,1.153-0.185c0.994-0.146,2-0.281,3.025-0.392 c0.001,0,0.001,0,0.002,0c0.002,0,0.006-0.001,0.008-0.001c0.106-0.012,0.211-0.026,0.317-0.037 c0.055-0.006,0.111-0.012,0.166-0.017c0.907-0.094,1.821-0.172,2.746-0.238c0.03-0.002,0.06-0.005,0.091-0.007l0.858-0.057 c0.667-0.041,1.339-0.071,2.012-0.097l0.808-0.031c0.945-0.028,1.897-0.047,2.868-0.047h162.817c1.051,0,2.086,0.019,3.108,0.051 c3.041,0.099,6.019,0.343,8.887,0.731c0.089,0.012,0.178,0.008,0.266,0.018c59.431,8.029,64.304,74.573,64.304,95.87 C487.922,396.23,482.4,470.222,411.355,470.222z"></path> 
+                    </g></g> 
+                    <g><g><path d="M329.948,301.708c-65.442,0-116.706,31.984-116.706,72.816s51.264,72.816,116.706,72.816s116.706-31.984,116.706-72.816 C446.653,333.692,395.39,301.708,329.948,301.708z M397.913,407.089c-17.962,10.43-42.099,16.174-67.967,16.174 s-50.005-5.744-67.967-16.174c-6.677-3.878-16.629-10.907-21.602-20.527h96.656c6.649,0,12.039-5.39,12.039-12.039 c0-6.649-5.39-12.039-12.039-12.039h-96.656c4.973-9.62,14.925-16.649,21.602-20.526c17.962-10.43,42.099-16.174,67.967-16.174 s50.005,5.744,67.967,16.174c9.211,5.349,24.662,16.692,24.662,32.565C422.575,390.397,407.124,401.74,397.913,407.089z"></path> </g> </g> <g> <g> <path d="M209.337,152.875c-0.157-0.77-0.385-1.529-0.686-2.251c-0.301-0.722-0.674-1.421-1.108-2.083 c-0.445-0.65-0.939-1.264-1.493-1.83c-0.566-0.554-1.18-1.047-1.83-1.493c-0.662-0.433-1.36-0.807-2.083-1.108 s-1.481-0.53-2.251-0.686c-1.553-0.313-3.154-0.313-4.707,0c-0.771,0.156-1.529,0.385-2.251,0.686 c-0.722,0.301-1.421,0.674-2.083,1.108c-0.65,0.445-1.276,0.939-1.83,1.493c-0.554,0.566-1.059,1.18-1.493,1.83 c-0.433,0.662-0.807,1.36-1.108,2.083c-0.301,0.722-0.53,1.481-0.686,2.251c-0.156,0.783-0.229,1.565-0.229,2.36 c0,0.782,0.072,1.565,0.229,2.348c0.157,0.77,0.385,1.529,0.686,2.251c0.301,0.722,0.674,1.421,1.108,2.083 c0.433,0.65,0.939,1.276,1.493,1.83c0.554,0.554,1.18,1.059,1.83,1.493c0.662,0.433,1.36,0.807,2.083,1.108 c0.722,0.301,1.481,0.53,2.251,0.686c0.782,0.156,1.565,0.241,2.348,0.241c0.795,0,1.577-0.084,2.36-0.241 c0.771-0.156,1.529-0.385,2.251-0.686s1.421-0.674,2.083-1.108c0.65-0.433,1.264-0.939,1.83-1.493 c0.554-0.554,1.047-1.18,1.493-1.83c0.433-0.662,0.807-1.36,1.108-2.083c0.301-0.722,0.53-1.481,0.686-2.251 c0.156-0.783,0.229-1.565,0.229-2.348C209.566,154.44,209.494,153.658,209.337,152.875z"></path> 
+                    </g></g> 
+                    <g><g> <path d="M384.957,372.171c-0.157-0.771-0.385-1.529-0.686-2.251c-0.301-0.722-0.674-1.433-1.108-2.083 c-0.445-0.662-0.951-1.276-1.505-1.83s-1.168-1.059-1.83-1.493c-0.65-0.433-1.348-0.807-2.071-1.108 c-0.734-0.301-1.493-0.53-2.251-0.686c-1.553-0.313-3.154-0.313-4.707,0c-0.771,0.156-1.529,0.385-2.251,0.686 c-0.734,0.301-1.433,0.674-2.083,1.108c-0.662,0.433-1.276,0.939-1.83,1.493s-1.059,1.168-1.493,1.83 c-0.433,0.65-0.807,1.36-1.108,2.083c-0.301,0.722-0.53,1.481-0.686,2.251c-0.156,0.77-0.241,1.565-0.241,2.348 c0,0.795,0.084,1.577,0.241,2.36c0.157,0.771,0.385,1.517,0.686,2.251c0.301,0.722,0.674,1.421,1.108,2.071 c0.433,0.662,0.939,1.276,1.493,1.83s1.168,1.059,1.83,1.505c0.65,0.433,1.348,0.807,2.083,1.108 c0.722,0.301,1.481,0.53,2.251,0.686c0.77,0.157,1.565,0.229,2.348,0.229c0.795,0,1.577-0.072,2.36-0.229 c0.758-0.156,1.517-0.385,2.251-0.686c0.722-0.301,1.421-0.674,2.071-1.108c0.662-0.445,1.276-0.951,1.83-1.505 s1.059-1.168,1.505-1.83c0.433-0.65,0.807-1.348,1.108-2.071c0.301-0.734,0.53-1.481,0.686-2.251 c0.156-0.783,0.229-1.565,0.229-2.36C385.186,373.736,385.114,372.941,384.957,372.171z"></path>
+                    </g></g> 
+                    <g><g><path d="M185.26,213.068c-0.156-0.77-0.385-1.517-0.686-2.251c-0.301-0.722-0.674-1.421-1.108-2.071 c-0.445-0.662-0.939-1.276-1.493-1.83c-0.566-0.566-1.18-1.059-1.83-1.505c-0.662-0.433-1.36-0.807-2.083-1.108 s-1.481-0.53-2.251-0.686c-1.553-0.313-3.154-0.313-4.707,0c-0.77,0.156-1.529,0.385-2.251,0.686 c-0.722,0.301-1.433,0.674-2.083,1.108c-0.662,0.445-1.276,0.939-1.83,1.505c-0.554,0.554-1.059,1.168-1.493,1.83 c-0.433,0.65-0.807,1.348-1.108,2.071c-0.301,0.734-0.53,1.481-0.686,2.251c-0.156,0.783-0.229,1.565-0.229,2.36 c0,0.782,0.072,1.565,0.229,2.348c0.156,0.77,0.385,1.529,0.686,2.251c0.301,0.722,0.674,1.421,1.108,2.083 c0.433,0.65,0.939,1.276,1.493,1.83s1.168,1.059,1.83,1.493c0.65,0.433,1.36,0.807,2.083,1.108 c0.722,0.301,1.481,0.53,2.251,0.686c0.783,0.156,1.565,0.241,2.348,0.241c0.795,0,1.577-0.084,2.36-0.241 c0.77-0.156,1.529-0.385,2.251-0.686s1.421-0.674,2.083-1.108c0.65-0.433,1.264-0.939,1.83-1.493 c0.554-0.554,1.047-1.18,1.493-1.83c0.433-0.662,0.807-1.36,1.108-2.083c0.301-0.722,0.53-1.481,0.686-2.251 c0.156-0.783,0.241-1.565,0.241-2.348C185.501,214.633,185.417,213.851,185.26,213.068z"></path> 
+                    </g></g> 
+                  </g>
+                </svg>
+              </div>
+              <h4 class="title">Maquillaje │ Perfumes │ Lencería</h4>
+              <p class="description">
+                <a class="description" href="https://www.victoriassecret.com/" target="_blank">Victoria Secret |</a> 
+                <a class="description" href="https://www.beautybay.com/" target="_blank">Beautybay |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.fragrancenet.com/" target="_blank">Fragrancenet |</a> 
+                <a class="description" href="https://www.morphe.com/" target="_blank">Morphe |</a> 
+                <a class="description" href="https://www.sephora.com/" target="_blank">Sephora |</a> 
+                <a class="description" href="https://www.juviasplace.com/" target="_blank">Juviasplace</a> 	
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class='bx bxs-watch'></i></div>
+              <h4 class="title">Relojes │ Accesorios</h4>
+              <div>
+                <a class="description" href="https://www.6pm.com" target="_blank">6PM |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.levi.com/" target="_blank">Levi's |</a> 
+                <a class="description" href="https://www.ashford.com/" target="_blank">Ashford |</a> 
+                <a class="description" href="https://www.simplelots.com/" target="_blank">Simplelots |</a> 
+                <a class="description" href="https://nicoleleeonline.com/" target="_blank">Nicolelee Online |</a> 
+                <a class="description" href="https://www.michaelkors.com/" target="_blank">Michael Kors</a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon">
+                <svg width="40px" height="40px" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+    
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(5.000000, 0.000000)" class="iconsvg">
+                          <path d="M5.975,1.988 C5.975,3.085 5.089,3.971 4,3.971 C2.914,3.971 2.028,3.084 2.028,1.988 C2.028,0.892 2.914,0.005 4,0.005 C5.089,0.00500000001 5.975,0.893 5.975,1.988 L5.975,1.988 Z" class="si-glyph-fill"></path>
+                          <path d="M5.854,10.032 C6.154,10.342 5.958,10.488 5.849,10.597 L4.826,11.729 C4.527,12.04 3.447,12.041 3.149,11.731 L2.15,10.618 C2.09,10.557 1.853,10.364 2.155,10.052 L5.854,10.032 L5.854,10.032 Z" class="si-glyph-fill"></path>
+                          <path d="M5.875,5.35 C5.631,5.154 5.336,5.035 5.013,5.035 L2.993,5.035 C2.665,5.035 2.363,5.161 2.117,5.363 C2.097,5.377 0.081,8.137 0.081,8.137 C-0.037,8.325 0.00199999999,8.589 0.168,8.726 C0.252,8.791 0.354,8.814 0.445,8.796 C0.539,8.777 0.625,8.72 0.684,8.625 L2.02,7.581 L2.02,8.56 C2.02,8.56 1.83775974,8.95699993 2.47875974,8.95699993 L5.589,8.957 C5.937,8.957 5.999,8.56 5.999,8.56 L5.999,7.609 L7.335,8.637 C7.396,8.732 7.481,8.79 7.576,8.809 C7.669,8.826 7.768,8.804 7.852,8.738 C8.021,8.603 8.06,8.34 7.941,8.149 C7.941,8.149 5.931,5.38 5.875,5.35 Z" class="si-glyph-fill"></path>
+                          <path d="M2.421,15.964 C2.248,15.964 1.897,15.838 1.795,15.664 L0.529,13.355 C0.384,13.111 1.441,11.101 1.441,11.101 L2.595,12.382 C2.595,12.382 2.028,13.037 2.009,13.222 C1.989,13.407 2.863,15.015 2.863,15.015 C3.03,15.291 2.966,15.671 2.719,15.859 C2.628,15.931 2.523,15.964 2.421,15.964 L2.421,15.964 Z" class="si-glyph-fill"></path>
+                          <path d="M5.531,15.964 C5.705,15.964 6.056,15.838 6.159,15.664 L7.424,13.355 C7.569,13.111 6.513,11.101 6.513,11.101 L5.359,12.382 C5.359,12.382 5.927,13.037 5.946,13.222 C5.965,13.407 5.091,15.015 5.091,15.015 C4.924,15.291 4.988,15.671 5.234,15.859 C5.325,15.931 5.43,15.964 5.531,15.964 L5.531,15.964 Z" class="si-glyph-fill"></path>
+                      </g>
+                  </g>
+              </svg>
+
+              </div>
+              <h4 class="title">Ropa para bebé</h4>
+              <div>
+                <a class="description" href="https://www.carters.com/" target="_blank">Carter´s |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.shopdisney.com/" target="_blank">Shopdisney |</a> 
+                <a class="description" href="https://us.patpat.com/" target="_blank">Patpat |</a> 
+                <a class="description" href="https://www.ebay.com/" target="_blank">Ebay |</a> 
+                <a class="description" href="https://www.oshkosh.com/" target="_blank">Oshkosh |</a> 
+                <a class="description" href="https://www.partycity.com/" target="_blank"> Party City</a> 			
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="ri-t-shirt-fill"></i></div>
+              <h4 class="title">Ropa para Mujer │ Hombre</h4>
+              <div>
+                <a class="description" href="https://www.asos.com/"target="_blank">Asos |</a> 
+                <a class="description" href="https://www.fashionnova.com/" target="_blank">Fashion Nova |</a> 
+                <a class="description" href="https://www.6pm.com" target="_blank">6PM |</a> 
+                <a class="description" href="https://www.finishline.com/" target="_blank">Finishline |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.gap.com" target="_blank">Gap |</a> 
+                <a class="description" href="https://us.shein.com/" target="_blank">Shein |</a> 
+                <a class="description" href="https://www.ebay.com/" target="_blank">Ebay |</a> 
+                <a class="description" href="https://www.jimmyjazz.com/" target="_blank">Jimmyjazz |</a> 
+                <a class="description" href="https://www.quiksilver.com/" target="_blank">Quik Silver |</a> 
+                <a class="description" href="https://www.calvinklein.us/en" target="_blank">Calvin Klein</a> 					
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon">
+                <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-3 0 40 40" xml:space="preserve" class="iconsvg">
+
+                  <g>
+                    <path d="M8,13c-0.1,0-0.2,0-0.2,0C5.6,12.4,4,10.4,4,8.1C4,5.3,6.2,3,9,3c1.6,0,3.1,0.8,4,2.1c0.3,0.4,0.2,1.1-0.2,1.4c-0.4,0.3-1.1,0.2-1.4-0.2C10.8,5.5,10,5,9,5C7.3,5,6,6.4,6,8.1c0,1.4,0.9,2.6,2.3,3c0.5,0.1,0.9,0.7,0.7,1.2C8.9,12.7,8.5,13,8,13z"/>
+                  </g>
+                  <g>
+                    <path d="M24,13c-0.4,0-0.9-0.3-1-0.8c-0.1-0.5,0.2-1.1,0.7-1.2c1.3-0.3,2.3-1.6,2.3-3C26,6.4,24.7,5,23,5c-1,0-1.8,0.5-2.4,1.3c-0.3,0.4-0.9,0.6-1.4,0.2c-0.4-0.3-0.6-0.9-0.2-1.4C19.9,3.8,21.4,3,23,3c2.8,0,5,2.3,5,5.1c0,2.3-1.6,4.4-3.8,4.9C24.1,13,24,13,24,13z"/>
+                  </g>
+                  <g>
+                    <g>
+                      <path d="M13.1,13.5C13.1,13.3,13,13.2,13,13v-1c0-0.6,0.4-1,1-1s1,0.4,1,1v1c0,0,0,0,0,0.1c0.3,0,0.7-0.1,1-0.1s0.7,0,1,0.1c0,0,0,0,0-0.1v-1c0-0.6,0.4-1,1-1s1,0.4,1,1v1c0,0.2-0.1,0.3-0.1,0.5c2.2,0.7,3.9,2.3,4.7,4.3c0.9-1.4,1.4-3.1,1.4-4.9c0-5-4-9.1-9-9.1s-9,4.1-9,9.1c0,1.8,0.5,3.5,1.4,4.9C9.2,15.8,10.9,14.2,13.1,13.5z"/>
+                    </g>
+                    <g>
+                      <path d="M17,15.1V16c0,0.6-0.4,1-1,1s-1-0.4-1-1v-0.9c-2.7,0.4-4.8,2.3-5,4.6c1.6,1.4,3.7,2.3,6,2.3s4.4-0.9,6-2.3C21.8,17.4,19.7,15.5,17,15.1z"/>
+                    </g>
+                  </g>
+                  <g>
+                    <path d="M9.7,29c-1.4,0-2.8-0.7-3.9-1.8c-2-2-2.4-4.8-0.9-6.3C5.5,20.3,6.3,20,7.3,20c0,0,0,0,0,0c1.4,0,2.8,0.7,3.9,1.8c2,2,2.4,4.8,0.9,6.3C11.5,28.7,10.6,29,9.7,29z"/>
+                  </g>
+                  <g>
+                    <path d="M22.3,29C22.3,29,22.3,29,22.3,29c-0.9,0-1.8-0.3-2.4-0.9c-1.5-1.5-1.1-4.3,0.9-6.3c1.1-1.1,2.6-1.8,3.9-1.8c0,0,0,0,0,0c0.9,0,1.8,0.3,2.4,0.9c1.5,1.5,1.1,4.3-0.9,6.3C25.1,28.3,23.7,29,22.3,29z"/>
+                  </g>
+                  <circle cx="4.5" cy="17.5" r="2.5"/>
+                  <circle cx="27.5" cy="17.5" r="2.5"/>
+                  </svg>
+              </div>
+              <h4 class="title">Juguetes</h4>
+              <div>
+                <a class="description" href="https://www.asos.com/" target="_blank">Asos |</a> 
+                <a class="description" href="https://www.fashionnova.com/" target="_blank">Fashion Nova |</a> 
+                <a class="description" href="https://www.6pm.com" target="_blank">6PM |</a> 
+                <a class="description" href="https://www.finishline.com/" target="_blank">Finishline |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.gap.com" target="_blank">Gap |</a> 
+                <a class="description" href="https://us.shein.com/" target="_blank">Shein |</a> 
+                <a class="description" href="https://www.ebay.com/" target="_blank">Ebay |</a> 
+                <a class="description" href="https://www.jimmyjazz.com/" target="_blank">Jimmyjazz |</a> 
+                <a class="description" href="https://www.quiksilver.com/" target="_blank">Quik Silver |</a> 
+                <a class="description" href="https://www.calvinklein.us/en" target="_blank">Calvin Klein</a> 					
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="ri-roadster-fill"></i></div>
+              <h4 class="title">Repuestos │ Autopartes</h4>
+              <div>
+                <a class="description" href="https://www.summitracing.com/" target="_blank">Summitracing |</a> 
+                <a class="description" href="https://shop.advanceautoparts.com/" target="_blank">Shop.advanceautoparts |</a> 
+                <a class="description" href="https://www.lmctruck.com/" target="_blank">Lmctruck |</a> 
+                <a class="description" href="https://www.car-part.com/" target="_blank">Car-part |</a> 
+                <a class="description" href="https://www.rockauto.com/" target="_blank">Rockauto</a> 			
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title">Deporte</h4>
+              <div>
+                <a class="description" href="https://www.asos.com/" target="_blank">Asos |</a> 
+                <a class="description" href="https://www.fashionnova.com/" target="_blank">Fashion Nova |</a> 
+                <a class="description" href="https://www.6pm.com" target="_blank">6PM |</a> 
+                <a class="description" href="https://www.finishline.com/" target="_blank">Finishline |</a> 
+                <a class="description" href="https://www.amazon.com/" target="_blank">Amazon |</a> 
+                <a class="description" href="https://www.gap.com" target="_blank">Gap |</a> 
+                <a class="description" href="https://us.shein.com/" target="_blank">Shein |</a> 
+                <a class="description" href="https://www.ebay.com/" target="_blank">Ebay |</a> 
+                <a class="description" href="https://www.jimmyjazz.com/" target="_blank">Jimmyjazz |</a> 
+                <a class="description" href="https://www.quiksilver.com/" target="_blank">Quik Silver |</a> 
+                <a class="description" href="https://www.calvinklein.us/en" target="_blank">Calvin Klein</a> 					
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+        <!-- ======= Cotizacion Section ======= -->
+    <section id="Cotizacion" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>CALCULADORA IMPOMAXS COURIER</h2>
+          <p>COTIZA EL COSTO TOTAL PARA TRAER TUS PRODUCTOS A PERÚ</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-10">
+              <div class="card border-0">
+                  <div class="card-body p-0">
+                      <div class="row no-gutters">
+                          <div class="col-lg-6">
+                              <div class="p-5">
+                                  <div class="mb-5">
+                                     
+                                  </div>
+                                  <h6 class="h5 mb-4">Calcula tu pedido</h6>
+                                  <form>
+                                    <div class="form-group"><label class="form-label" for="pesotex">¿Qué Contiene tu Compra?</label>
+                                      <input class="form-control form-control" type="text" cc placeholder="Ejemplo: (Relojes, Zapatillas, Ropa, etc.)">
+                                    </div>
+                                      <div class="form-group"><label class="form-label" for="pesotex">¿Cuánto Pesa tu Compra? (Máximo 2 Decimales)</label>
+                                        <input class="form-control form-control" type="number" id="pesotex" onchange="cotizar();" placeholder="(KG)">
+                                      </div>
+                                      <div class="form-group mb-5"><label class="form-label"for="costotext">¿Qué Precio Tiene tu Compra? (Colocar el monto dólares)</label>
+                                        <input class="form-control form-control" type="number" id="costotext" onchange="cotizar();" placeholder="(USD)">
+                                      </div><button class="btn btn-primary" type="button" onclick="cotizar();">Cotizar</button>
+                                  </form>
+                                  <div id="cotizacionM" class="d-lg-none d-xxl-none m-4"">
+
+                                  </div>
+                                 
+                              </div>
+                          </div>
+                          <div class="col-lg-6 d-none d-lg-inline-block">
+                              <div id="account" class="account-block rounded-right" >
+                                  <div class="overlay rounded-right"></div>
+                                  <div id="cotizacion" class="account-testimonial" data-aos="fade-up" data-aos-delay="100">
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <p class="text-center text-muted mt-3 mb-0">*El costo del servicio es de $10 dólares por kilo y $10 dólares por trámites aduaneros.<br>*Si el peso de su pedido es menor o igual a 1kg, pagarás $10 por kilo.<br>*Toda compra superior o igual a $200 dólares está sujeto a pago de impuestos. </p>
+          </div>
+      </div>
+
+      </div>
+
+      </div>
+    </section><!-- End Cotizacion Section -->
+
+    <section id="Cotizacion" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>CALCULADORA IMPOMAXS COURIER</h2>
+          <p>COTIZA EL COSTO TOTAL PARA TRAER TUS PRODUCTOS A PERÚ</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="container">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <div class="h-100 d-flex justify-content-center align-items-center">
+                      <div class="py-4 px-3">
+                        <h4>Calcula tu pedido</h4>
+                        <div class="row g-2 mt-1">
+                          <div class="col-md-12">
+                            <p>¿Qué Contiene tu Compra?</p>
+                            <div class="input-field">
+                              <input class="form-control"  required>
+                              <label for="input3">(Relojes, Zapatillas, Ropa, etc.)</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-2">
+                          <div class="col-md-12">
+                            <p>¿Cuánto Pesa tu Compra? (Máximo 2 Decimales)</p>
+                            <div class="input-field">
+                              <input class="form-control" id="pesotex" onchange="cotizar();" required>
+                              <label for="input3">(KG)</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-2 mb-2">
+                          <div class="col-md-12">
+                            <p>¿Qué Precio Tiene tu Compra? (Colocar el monto dólares)</p>
+                            <div class="input-field">
+                              <input class="form-control" id="costotext" onchange="cotizar();" required>
+                              <label for="input4">(USD)</label>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row mt-2">
+                          <div class="col-md-6 mt-2">
+                            <button class="btn btn-primary w-100 signup-button" onchange="cotizar();">Cotiza</button>
+                          </div>
+                          <div class="col-md-6 mt-2">
+                            <button class="btn btn-primary w-100 signup-button">Informacion</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="right-side-content">
+                      <div id="cotizacion" class="contentmensaje d-flex flex-column">
+                        <p>Al peso de 5KG se le multiplica $10 y se le suma $10 de trámites aduaneros</p>
+                        <p> $10 X 5KG = $50</p> 
+                        <p> $50 + $10 = $60</p>  
+                      </div>
+                      <div class="right-side">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span><img src="{% static 'Currierr/img/undraw_savings_re_cotizar.svg' %}" alt=""> </span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span> <img src="https://i.imgur.com/U0863iD.jpg" title="imagen2"> </span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="parallelogram">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+              <p class="text-center text-muted mt-3 mb-0">*El costo del servicio es de $10 dólares por kilo y $10 dólares por trámites aduaneros.<br>*Si el peso de su pedido es menor o igual a 1kg, pagarás $10 por kilo.<br>*Toda compra superior o igual a $200 dólares está sujeto a pago de impuestos (24%). </p>
+          </div>
+      </div>
+
+      </div>
+
+      </div>
+    </section><!-- End Cotizacion Section -->
+    <!-- ======= More Services Section ======= -->
+    <section id="Servicios" class="more-services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Servicios</h2>
+          <p>Nuestros servicios se ejecutan con un enfoque profesional y un compromiso inquebrantable con la excelencia.</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card more-services-imagen1" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title">Consolidamos tus paquetes</h5>
+                <p class="card-text">Consolidamos todas tus compras de distintas páginas webs en un solo paquete. No cobramos por volumen ni almacenamiento.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="card more-services-imagen2"  data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title">Servicio de compras</h5>
+                <p class="card-text">Impomaxs Courier hace la compra por ti sin costos adicionales! Contáctanos para mayor información haciendo clic abajo</p>
+                <p class="read-more"><a href="https://wa.link/q3116w" target="_blank"><i class="bi bi-arrow-right"></i> Mas Informacion aqui</a></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card more-services-imagen3" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body">
+                <h5 class="card-title">Enviamos tus Compras a todas partes del Perú</h5>
+                <p class="card-text">Recibe tus productos en la comodidad de tu hogar, trabajo o agencias de envíos del distrito que te encuentres ¡Así de sencillo!</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4">
+            <div class="card more-services-imagen4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <h5 class="card-title">Asesoría Personalizada</h5>
+                <p class="card-text">Te brindamos soporte y recomendaciones a la hora de realizar tu compra.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End More Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sobre Nosotros</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              Traemos tus compras de manera segura, confiable y barato, como si las trajera tú mismo.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Con una larga trayectoria en importaciones de EE. UU. a Perú, ofrecemos un servicio confiable y eficiente gracias a nuestro profundo conocimiento del proceso aduanero y regulaciones.</li>
+              <li><i class="ri-check-double-line"></i> Importamos una diversidad de productos, desde tecnología hasta moda y belleza, brindando opciones para satisfacer diferentes gustos y necesidades de los clientes en Perú.</li>
+              <li><i class="ri-check-double-line"></i> Facilitamos la adquisición de productos desde sitios web de EE. UU. para los clientes peruanos, eliminando barreras geográficas y asegurando la llegada eficiente de los productos deseados.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 " data-aos="fade-up" data-aos-delay="300">
+            <p class="justify">Con una sólida trayectoria en el sector logístico, nos enorgullece ser una empresa peruana líder en el ámbito de importaciones desde Estados Unidos a Perú. 
+              Nuestra dedicación se centra en brindar un acceso sin complicaciones a una amplia gama de productos, desde tecnología de vanguardia hasta artículos de moda, 
+              como ropa, relojes, carteras y zapatillas de renombradas marcas. Además, facilitamos la adquisición de productos de belleza, como maquillaje y perfumes, junto 
+              con dispositivos electrónicos como celulares y laptops, directamente desde las reconocidas páginas web de Estados Unidos. Nuestro compromiso radica en garantizar 
+              que cada entrega se realice de manera eficiente y segura, cumpliendo con las expectativas de calidad y satisfacción de nuestros clientes en cada paso del proceso.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="{% static 'Currierr/img/counts-img.svg' %}" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="counter">+<span data-purecounter-start="0" data-purecounter-end="10345" data-purecounter-duration="6" data-purecounter-separator=","  class="purecounter"></span></p>
+                    <p class="parafr justify"><strong>Clientes Satisfechos</strong> que confiaron en nosotros para realizar sus primeros envios. </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-airplane"></i>
+                    <p class="counter">+<span data-purecounter-start="0" data-purecounter-end="750" data-purecounter-duration="6" class="purecounter"></span></p>
+                    <p class="parafr justify"><strong>Vuelos de Estados Unidos a Perú</strong> ofreciendo satisfacción a todo el Perú con nuestro compromiso inquebrantable con la calidad y el servicio excepcional.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <p class="counter">+<span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="5" class="purecounter"></span></p>
+                    <p class="parafr justify"><strong>Años de Experiencia </strong> en el rubro de envío de encomiendas y paqueteria de Estados Unidos a Perú logrando satisfacer las necesidades de nuestros clientes de manera eficiente.</p>
+                  </div>
+                </div>
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-clock"></i>
+                    <p class="counter">+<span data-purecounter-start="0" data-purecounter-end="20000" data-purecounter-duration="6" data-purecounter-separator=","  class="purecounter"></span></p>
+                    <p class="parafr justify"><strong>Seguidores</strong> en todas nuestras redes sociales.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Counts Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonios</h2>
+          <p>Clientes como tú, que solicitaron nuestro servicio</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t1.avif' %}" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Increíble empresa de envíos. Mis paquetes llegaron en perfecto estado y antes de lo previsto. Definitivamente los recomendaré.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t2.avif' %}" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Gracias a su eficiente servicio, he recibido mis productos internacionales sin demoras ni problemas. Confianza absoluta en su trabajo.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t3.avif' %}" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    La atención al cliente es excepcional. Siempre dispuestos a resolver mis dudas y asegurarse de que mis envíos lleguen correctamente.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t4.avif' %}" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    No puedo expresar lo contento que estoy con la rapidez y la seguridad de sus envíos internacionales. Definitivamente mi elección número uno.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t5.avif' %}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Impresionado con la facilidad de rastreo en línea y la puntualidad en las entregas. Han hecho que importar sea sin estrés.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'Currierr/img/testimonials/t6.avif' %}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <div class="ranking">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Hemos utilizado varios servicios de envío, pero ninguno se compara a la tranquilidad y satisfacción que esta empresa nos brinda cada vez.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>FAQS Y RECOMENDACIONES</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Qué servicio brinda Impomaxs Courier?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Somos una courier, encargado de traer tus compras de Estados Unidos y que lo recibas en Perú.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Cómo compro de Estados Unidos?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Puedes encontrar toda esa información detallada en 3 simples pasos en <a class="scrollto" href="#Listacompra">aqui</a>
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Cúal es su tarifa?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Contamos con una tarifa muy económica para tus importaciones.
+            </p>
+            <p>
+              Por kilo: $10
+            </p>
+            <p>
+              Trámites aduaneros: $10
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Si soy cliente nuev@, me asesoran en mi compra?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Te ayudamos en tu compra de principio a fin, te recomendamos las mejores Páginas Web para comprar en Estados Unidos.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Puedo consolidar mis paquetes?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Claro que si, consolidamos todas tus compras de distintas páginas webs en un solo paquete. No cobramos por volumen ni almacenamiento.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Me encuentro en provincia ¿Puedo comprar?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Realizamos envíos a todo el Perú. Toda Lima Metropolitana y provincias.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="700">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Donde llegan mis compras cuando llegan a Lima?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              A nuestro almacén de C. 52, Cercado de Lima 15306
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="800">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>¿Cuánto tiempo puedo retener mis pedidos en el almacén de Lima?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Se podrá almacenar sus pedidos con costo $0 USD durante 15 días calendario en Lima. A partir del día siguiente se le cobrará $2 USD por día que se encuentre en almacén.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+      </div>
+
+      <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0 justify-content-center text-center" data-aos="fade-up" data-aos-delay="900">
+                <div class="Recomendaci  bg-gradient text-white rounded-3 mb-3"><i class="far fa-money-bill-alt"></i></div>
+                <h2 class="h4 fw-bolder text-uppercase">evita pago de impuestos</h2>
+                <p>Compras menores a $200 en valor de producto no pagan impuestos.</p>
+                
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0 text-center" data-aos="fade-up" data-aos-delay="900">
+                <div class="Recomendaci  bg-gradient text-white rounded-3 mb-3"><i class="fas fa-id-card"></i></div>
+                <h2 class="h4 fw-bolder text-uppercase">condición</h2>
+                <p>Con DNI máximo 3 compras al año y con RUC de manera ilimitada.</p>
+                
+            </div>
+            <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-delay="900">
+                <div class="Recomendaci bg-gradient text-white rounded-3 mb-3"><i class="fas fa-boxes"></i></div>
+                <h2 class="h4 fw-bolder text-uppercase">consolida tus paquetes</h2>
+                <p>Puedes consolidar varias compras realizadas en páginas webs y traerlas en un solo envío.</p>
+               
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End F.A.Q Section -->
+
+    <!-- ======= Login and create Section ======= -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl" role="document">
+        <div class="modal-content"></div>
+      </div>
+    </div>
+    <!-- End #main -->
+  </main>
+
+  {% endblock %}
+
+{% block extrascripts %}
+
+{% endblock extrascripts %}
